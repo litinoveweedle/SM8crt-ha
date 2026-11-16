@@ -4,7 +4,7 @@ LINK = "https://sequentmicrosystems.com/products/hall-current-sensor-daq-stackab
 
 import SM8crt
 API = SM8crt.SM8crt
-DOMAIN = "SM8crt"
+DOMAIN = "sm8crt"
 NAME_PREFIX = "sm8crt"
 
 SM_MAP = {
