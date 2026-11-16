@@ -1,18 +1,20 @@
 {
-	"domain": "sm8crt",
-	"name": "Sequent Microsystems HALL Current Sensor DAQ Integration",
-	"version": "1.0.0",
-	"integration_type": "device",
-	"documentation": "https://github.com/SequentMicrosystems/SM8crt-ha",
-	"issue_tracker": "https://github.com/SequentMicrosystems/SM8crt-ha",
-	"dependencies": [],
-	"after_dependencies": [],
-	"codeownders": [
-		"3lv"
-	],
-	"config_flow": true,
-	"requirements": [
-		"SM8crt>=0.1.0",
-		"SMcommonHA>=0.0.2"
-	]
+  "domain": "sm8crt",
+  "name": "Sequent Microsystems HALL Current Sensor DAQ Integration",
+  "after_dependencies": [],
+  "codeowners": [
+    "@3lv",
+    "litinoveweedle"
+  ],
+  "config_flow": true,
+  "dependencies": [],
+  "documentation": "https://github.com/SequentMicrosystems/SM8crt-ha",
+  "integration_type": "device",
+  "iot_class": "local_polling",
+  "issue_tracker": "https://github.com/SequentMicrosystems/SM8crt-ha",
+  "requirements": [
+    "SM8crt>=0.1.0",
+    "SMcommonHA>=0.0.3"
+  ],
+  "version": "1.0.0"
 }
