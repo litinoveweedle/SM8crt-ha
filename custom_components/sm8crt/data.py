@@ -8,6 +8,11 @@ DOMAIN = "sm8crt"
 NAME_PREFIX = "sm8crt"
 
 SM_MAP = {
+    "button": {
+        "watchdog_reload": {
+            "chan_no": 1, "optional": True, "com": {"set": "wdt_reload"},
+        },
+    },
     "datetime": {
         "rtc": {
                 "chan_no": 1,
@@ -18,6 +23,9 @@ SM_MAP = {
         },
     },
     "sensor":  {
+        "watchdog_count": {
+            "chan_no": 1, "optional": True, "com": {"get": "wdt_get_reset_count"},
+        },
         "crt": {
                 "chan_no": 8,
                 "uom": "A",
@@ -66,6 +74,16 @@ SM_MAP = {
         },
     },
     "number": {
+        "watchdog_period": {
+            "chan_no": 1, "optional": True, "uom": "s",
+            "min_value": 1, "max_value": 65535, "step": 1,
+            "com": {"get": "wdt_get_period", "set": "wdt_set_period"},
+        },
+        "watchdog_initial": {
+            "chan_no": 1, "optional": True, "uom": "s",
+            "min_value": 1, "max_value": 65535, "step": 1,
+            "com": {"get": "wdt_get_init_period", "set": "wdt_set_init_period"},
+        },
         "crt_range": {
                 "chan_no": 8,
                 "uom": "A",
